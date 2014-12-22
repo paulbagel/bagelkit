@@ -1,10 +1,9 @@
-/* 
-  SupportKitLocalizable.strings
-  SupportKit
-
-  Created by Jean-Philippe Joyal on 2014-10-20.
-  Copyright (c) 2014 Radialpoint. All rights reserved.
-*/
+/*
+ SupportKitLocalizable.strings
+ SupportKit
+ 
+ Copyright (c) 2014 Radialpoint. All rights reserved.
+ */
 
 /* Search bar placeholder */
 "Search %@ Help" = "Search %@ Help";
@@ -74,3 +73,6 @@
 
 /* Failure text for chat messages that fail to upload */
 "Message not delivered. Tap to retry." = "Message not delivered. Tap to retry.";
+
+/* Status text for chat messages */
+"Sending..." = "Sending...";
