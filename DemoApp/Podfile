@@ -1,0 +1,3 @@
+source 'http://git.rp.corp/scm/csa/privatetestcocoapodrepo.git'
+
+pod 'SupportKit'
