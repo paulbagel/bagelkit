@@ -1,14 +1,24 @@
-# [Radialpoint SupportKit](http://www.supportkit.io)
+# [Smooch](http://www.smooch.io)
 
-[![Pod Version](http://img.shields.io/cocoapods/v/SupportKit.svg)](http://cocoadocs.org/docsets/SupportKit/)
-[![Platform](http://img.shields.io/cocoapods/p/SupportKit.svg)](http://cocoadocs.org/docsets/SupportKit/)
-[![License](http://img.shields.io/cocoapods/l/SupportKit.svg)](http://supportkit.io/terms.pdf)
+[![Pod Version](http://img.shields.io/cocoapods/v/Smooch.svg)](http://cocoadocs.org/docsets/Smooch/)
+[![Platform](http://img.shields.io/cocoapods/p/Smooch.svg)](http://cocoadocs.org/docsets/Smooch/)
+[![License](http://img.shields.io/cocoapods/l/Smooch.svg)](http://smooch.io/terms.html)
 
-# tl;dr
-    Sign up and get an app token: https://app.supportkit.io/signup
-    pod 'SupportKit'
+Sign up and get an app token: [https://app.smooch.io/signup](https://app.smooch.io/signup).
+
+CocoaPods:
+
+    pod 'Smooch'
     pod update
-    [SupportKit initWithSettings:[SKTSettings settingsWithAppToken:@"YOURAPPTOKEN"]];
-    [SupportKit show];
+    
+Obj-C:
+    
+    [Smooch initWithSettings:[SKTSettings settingsWithAppToken:@"YOURAPPTOKEN"]];
+    [Smooch show];
+    
+Swift:
 
-Our [Docs and full install guide](http://docs.supportkit.io).
+    Smooch.initWithSettings("YOURAPPTOKEN")
+    Smooch.show()
+
+Our [Docs and full install guide](http://docs.smooch.io).
