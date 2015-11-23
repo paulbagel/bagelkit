@@ -33,7 +33,7 @@
     self.contentView = [[MainContentView alloc] initWithFrame:self.view.bounds];
     
     UINavigationItem* navItem = [[UINavigationItem alloc] initWithTitle:@""];
-    navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Help" style:UIBarButtonItemStylePlain target:self action:@selector(launch)];
+    navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Speak to us" style:UIBarButtonItemStylePlain target:self action:@selector(launch)];
     [self.contentView.navBar pushNavigationItem:navItem animated:NO];
     
     [self.contentView.button addTarget:self action:@selector(launch) forControlEvents:UIControlEventTouchUpInside];

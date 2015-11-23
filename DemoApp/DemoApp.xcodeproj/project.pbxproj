@@ -10,6 +10,7 @@
 		270EE2E61B43091400218B06 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EE2E51B43091400218B06 /* AssetsLibrary.framework */; };
 		270EE2E81B43091A00218B06 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EE2E71B43091A00218B06 /* Photos.framework */; };
 		2777DBEC1B4AD03000AB9E6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC25348718F59E1A0065C6B4 /* AVFoundation.framework */; };
+		27E9A8F71BF3D1B400CA6BFF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9A8F61BF3D1B400CA6BFF /* CFNetwork.framework */; };
 		81B085A41A8025A20040E15D /* launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81B085A61A8025A20040E15D /* launch.xib */; };
 		DC0B627F1857AA300062B17F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0B627E1857AA300062B17F /* Foundation.framework */; };
 		DC0B62811857AA300062B17F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0B62801857AA300062B17F /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 		270EE2E51B43091400218B06 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		270EE2E71B43091A00218B06 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		27B7D7EB195C8D9A00A7E55A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		27E9A8F61BF3D1B400CA6BFF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		81B085A51A8025A20040E15D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/launch.xib; sourceTree = "<group>"; };
 		DC0B627B1857AA300062B17F /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0B627E1857AA300062B17F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E9A8F71BF3D1B400CA6BFF /* CFNetwork.framework in Frameworks */,
 				2777DBEC1B4AD03000AB9E6D /* AVFoundation.framework in Frameworks */,
 				270EE2E81B43091A00218B06 /* Photos.framework in Frameworks */,
 				270EE2E61B43091400218B06 /* AssetsLibrary.framework in Frameworks */,
@@ -109,6 +112,7 @@
 		DC0B627D1857AA300062B17F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27E9A8F61BF3D1B400CA6BFF /* CFNetwork.framework */,
 				270EE2E71B43091A00218B06 /* Photos.framework */,
 				270EE2E51B43091400218B06 /* AssetsLibrary.framework */,
 				DC80A38E188EDBD800B6BF9F /* Smooch.bundle */,
@@ -286,6 +290,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-licucore";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -317,6 +322,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-licucore";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

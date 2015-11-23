@@ -88,7 +88,7 @@ static const int kLogoBottomPadding = 30;
 {
     self.subtitleLabel = [[UILabel alloc] init];
     self.subtitleLabel.textColor = [self textColor];
-    self.subtitleLabel.text = @"You can invoke Smooch from interactions made with your app, such as a button tap, or on specific events where help is required.";
+    self.subtitleLabel.text = @"Smooch lets you build rich messaging inside your apps and websites. Try out this demo app to see what it can do for you.";
     self.subtitleLabel.textAlignment = NSTextAlignmentCenter;
     self.subtitleLabel.font = [UIFont systemFontOfSize:15];
     self.subtitleLabel.numberOfLines = 0;
@@ -100,10 +100,12 @@ static const int kLogoBottomPadding = 30;
 -(void)initButton
 {
     self.button = [RoundedButton new];
-    [self.button setTitle:@"Launch Help" forState:UIControlStateNormal];
+    [self.button setTitle:@"Smooch Me" forState:UIControlStateNormal];
     // Make the button purple
     self.button.backgroundColor = [self buttonColor];
     self.button.layer.borderColor = [self buttonColor].CGColor;
+    [self.button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.button setTitleColor:[UIColor colorWithWhite:1.0 alpha:0.5] forState:UIControlStateHighlighted];
     [self addSubview:self.button];
 }
 

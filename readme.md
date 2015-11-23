@@ -18,7 +18,15 @@ Obj-C:
     
 Swift:
 
-    Smooch.initWithSettings("YOURAPPTOKEN")
+In your bridging header:
+
+    #import <Smooch/Smooch.h>
+    
+In a Swift file:
+
+    Smooch.initWithSettings(SKTSettings(appToken: "YOUR_APP_TOKEN"))
     Smooch.show()
 
 Our [Docs and full install guide](http://docs.smooch.io).
+
+Also, check out [Smooch Help Kit](https://github.com/smooch/smooch-helpkit-ios) for even more features!
